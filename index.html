@@ -11,15 +11,59 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   
   <style>
-    body {
-        background-image: url("Hawaii.jpg"); /* replace this image URL */
-        background-size: cover; /* Cover the entire background */
-        background-repeat: no-repeat;
-        background-attachment: fixed; /* Optional: Keep background fixed on scroll */
-        margin: 0; /* Remove default body margins */
-        display: flex; /* Use flexbox for vertical centering */
-        min-height: 100vh; /* Ensure full viewport height */
-        flex-direction: column; /* Align items vertically */
+    /* CSS for the landing page only */
+   
+    .landing-page-wrapper {
+      /* Set your background properties here */
+      background-image: url('office4.png'); /* Replace with your image path */
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      background-attachment: fixed;
+      
+      /* Center the content */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+      /* Ensure it takes up the full viewport height */
+      min-height: 100vh;
+      width: 100%;
+    }
+
+    .container {
+      text-align: center;
+      color: rgb(78, 78, 247); /* Example text color */
+      font-weight: bold;
+      background-color: rgba(102, 95, 95, 0.1); /* Semi-transparent background for readability */
+      padding: 20px;
+      border-radius: 10px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      font-size: 19px;
+      border: none;
+      cursor: pointer;
+      
+    }
+
+    /* Optional: Style for the button and text */
+    .btn {
+      padding: 10px 20px;
+      
+      background: rgb(158, 216, 247);
+      color: white;
+      cursor: pointer;
+      font-size: 16px;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: rgb(172, 252, 172);
+      color: black;
     }
   </style>
 
@@ -28,7 +72,7 @@
  
    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-center scrolled nav justify-content-center">
 
- <div class="container">
+ <div class="container1">
   <a class="navbar-brand-center" href="#"></a>
     <!-- Brand and toggle get grouped for better mobile display -->
      <div class="navbar-header">
@@ -63,9 +107,16 @@
    </ul> 
     </div>
 </nav> 
-  <!-- Slideshow -->
+  <!-- Button -->
+  <center>
+    <div class="landing-page-wrapper">
+      <div class="container">
+        <h1>Stella Namude Portfolio</h1>
+        <p>Crafting visually pleasing websites through design, editing, and storytelling.</p>
+        <a button class="btn" href="Projects.html">Projects</a>
+      </div>
+    </div>
+</center>
   
-  <div>
-  </div>
 </body>
 </html>
